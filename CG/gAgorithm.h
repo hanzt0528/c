@@ -14,7 +14,7 @@ CxVector  operator+(const CxVector &o1, const CxVector &o2)
 	return v;
 }
 
-CxPoint & operator+ (const CxPoint &p, const CxVector &v)
+CxPoint  operator+ (const CxPoint &p, const CxVector &v)
 {
 	CxPoint pt;
 	pt.x = p.x + v.x;
@@ -23,7 +23,7 @@ CxPoint & operator+ (const CxPoint &p, const CxVector &v)
 	return pt;
 }
 
-CxPoint &operator- (const CxPoint &p, const CxVector &v)
+CxPoint operator- (const CxPoint &p, const CxVector &v)
 {
 	CxPoint pt;
 	pt.x = p.x - v.x;
