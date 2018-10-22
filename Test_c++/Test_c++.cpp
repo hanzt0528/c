@@ -756,6 +756,11 @@ int main()
 	
 	int i = 1;
 	//get<i>(t);// Won't compile,i must be a compile time constant
+	
+	constexpr int i2 = 1;
+	get<i2>(t); //  all right ,because of i2 is a compile time constant.
+	
+
 
 	tuple<int, string, char> t2;
 
@@ -824,9 +829,14 @@ int main()
 	std::map<tuple<int, int, int>, string> timemap;
 
 	timemap.insert(make_pair(make_tuple(12, 2, 3), "Game start"));
-	cout << timemap[make_tuple(12, 2, 3)];
+	cout << timemap[make_tuple(12, 2, 3)]<<endl;
 
+	// vector store diffrent content.
+	std::vector<tuple<int, string>> vt;
 
+	vt.push_back(std::make_tuple(12, "cat"));
+
+	cout << get<1>(vt[0]) << endl;
 
 	return 0;
 }
