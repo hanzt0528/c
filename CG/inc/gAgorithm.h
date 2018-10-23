@@ -1,7 +1,7 @@
 #pragma once
 // 2018.10.17
 #include "gObject.h"
-
+#include "math.h"
 
 CxVector  operator+(const CxVector &o1, const CxVector &o2)
 {
@@ -52,4 +52,10 @@ bool operator==(const CxVector &o1, const CxVector &o2)
 bool operator!=(const CxVector &o1, const CxVector &o2)
 {
 	return (o1 == o2) ? false : true;
+}
+
+float xLength(CxLine l)
+{
+ float length = sqrt( (l.p2.x - l.p1.x)*(l.p2.x - l.p1.x) + (l.p2.y - l.p1.y)*(l.p2.y - l.p1.y)+(l.p2.z - l.p1.z)*(l.p2.z - l.p1.z) );
+ return length;
 }
