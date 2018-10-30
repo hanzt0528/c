@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include "../inc/gObject.h"
-#include "../inc/gAgorithm.h"
+#include "../../inc/gObject.h"
+#include "../../inc/gAgorithm.h"
 #include <glut/glut.h>
 #include "time.h"
 #include <thread>
