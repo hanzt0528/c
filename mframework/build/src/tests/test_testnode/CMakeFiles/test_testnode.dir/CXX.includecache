@@ -15,6 +15,18 @@ util.h
 /Users/hanzhongtao/Programs/cg/c/mframework/include/base/util.h
 type.h
 /Users/hanzhongtao/Programs/cg/c/mframework/include/base/type.h
+xerrors.h
+/Users/hanzhongtao/Programs/cg/c/mframework/include/base/xerrors.h
+TNsSmartPtr.h
+/Users/hanzhongtao/Programs/cg/c/mframework/include/base/TNsSmartPtr.h
+
+/Users/hanzhongtao/Programs/cg/c/mframework/include/base/TNsSmartPtr.h
+type.h
+/Users/hanzhongtao/Programs/cg/c/mframework/include/base/type.h
+string
+-
+assert.h
+/Users/hanzhongtao/Programs/cg/c/mframework/include/base/assert.h
 
 /Users/hanzhongtao/Programs/cg/c/mframework/include/base/type.h
 
@@ -23,6 +35,8 @@ iostream
 -
 type.h
 /Users/hanzhongtao/Programs/cg/c/mframework/include/base/type.h
+
+/Users/hanzhongtao/Programs/cg/c/mframework/include/base/xerrors.h
 
 /Users/hanzhongtao/Programs/cg/c/mframework/include/nodes/IAdd.h
 ../base/IUnknown.h

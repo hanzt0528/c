@@ -3,8 +3,10 @@
 
 src/nodes/testnode/CMakeFiles/testnode.dir/CAdd.cpp.o: ../include/base/CUnknown.h
 src/nodes/testnode/CMakeFiles/testnode.dir/CAdd.cpp.o: ../include/base/IUnknown.h
+src/nodes/testnode/CMakeFiles/testnode.dir/CAdd.cpp.o: ../include/base/TNsSmartPtr.h
 src/nodes/testnode/CMakeFiles/testnode.dir/CAdd.cpp.o: ../include/base/type.h
 src/nodes/testnode/CMakeFiles/testnode.dir/CAdd.cpp.o: ../include/base/util.h
+src/nodes/testnode/CMakeFiles/testnode.dir/CAdd.cpp.o: ../include/base/xerrors.h
 src/nodes/testnode/CMakeFiles/testnode.dir/CAdd.cpp.o: ../include/nodes/IAdd.h
 src/nodes/testnode/CMakeFiles/testnode.dir/CAdd.cpp.o: ../src/nodes/testnode/CAdd.cpp
 src/nodes/testnode/CMakeFiles/testnode.dir/CAdd.cpp.o: ../src/nodes/testnode/CAdd.h
@@ -12,8 +14,10 @@ src/nodes/testnode/CMakeFiles/testnode.dir/CAdd.cpp.o: ../src/nodes/testnode/CAd
 src/nodes/testnode/CMakeFiles/testnode.dir/CAddClassFactory.cpp.o: ../include/base/CUnknown.h
 src/nodes/testnode/CMakeFiles/testnode.dir/CAddClassFactory.cpp.o: ../include/base/IClassFactory.h
 src/nodes/testnode/CMakeFiles/testnode.dir/CAddClassFactory.cpp.o: ../include/base/IUnknown.h
+src/nodes/testnode/CMakeFiles/testnode.dir/CAddClassFactory.cpp.o: ../include/base/TNsSmartPtr.h
 src/nodes/testnode/CMakeFiles/testnode.dir/CAddClassFactory.cpp.o: ../include/base/type.h
 src/nodes/testnode/CMakeFiles/testnode.dir/CAddClassFactory.cpp.o: ../include/base/util.h
+src/nodes/testnode/CMakeFiles/testnode.dir/CAddClassFactory.cpp.o: ../include/base/xerrors.h
 src/nodes/testnode/CMakeFiles/testnode.dir/CAddClassFactory.cpp.o: ../include/nodes/IAdd.h
 src/nodes/testnode/CMakeFiles/testnode.dir/CAddClassFactory.cpp.o: ../src/nodes/testnode/CAdd.h
 src/nodes/testnode/CMakeFiles/testnode.dir/CAddClassFactory.cpp.o: ../src/nodes/testnode/CAddClassFactory.cpp

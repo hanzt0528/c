@@ -15,25 +15,10 @@ typedef struct _GUID
 typedef GUID IID;
 typedef GUID CLSID;
 
+typedef void* HANDLE;
+
 #define interface class
 
-#define E_NOINTERFACE -1
-#define S_OK  0
-#define HRESULT long
-#define NOERROR 0
-#define E_POINTER -1
-#ifndef NSDECLARE_IUNKNOWN
-#define NSDECLARE_IUNKNOWN									\
-    inline virtual HRESULT __stdcall QueryInterface(const IID& in_rsIID, void **ppv) {      \
-        return GetOwner()->QueryInterface(in_rsIID,ppv);            \
-    };                                                          \
-    inline virtual unsigned long __stdcall AddRef() {              \
-        return GetOwner()->AddRef();                            \
-    };                                                          \
-    inline virtual unsigned long __stdcall Release() {             \
-        return GetOwner()->Release();                           \
-    };                                                          
-#endif
 
 
 #endif // TYPE_H

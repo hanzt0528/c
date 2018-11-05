@@ -15,3 +15,11 @@
 /Users/hanzhongtao/Programs/cg/c/mframework/build/src/tests/test_testnode/CMakeFiles/rebuild_cache.dir
 /Users/hanzhongtao/Programs/cg/c/mframework/build/src/tests/test_testnode/CMakeFiles/edit_cache.dir
 /Users/hanzhongtao/Programs/cg/c/mframework/build/src/tests/test_testnode/CMakeFiles/test_testnode.dir
+/Users/hanzhongtao/Programs/cg/c/mframework/build/src/tests/test_cache/CMakeFiles/rebuild_cache.dir
+/Users/hanzhongtao/Programs/cg/c/mframework/build/src/tests/test_cache/CMakeFiles/edit_cache.dir
+/Users/hanzhongtao/Programs/cg/c/mframework/build/src/tests/test_cache/CMakeFiles/test_cache.dir
+/Users/hanzhongtao/Programs/cg/c/mframework/build/src/common/CMakeFiles/rebuild_cache.dir
+/Users/hanzhongtao/Programs/cg/c/mframework/build/src/common/CMakeFiles/edit_cache.dir
+/Users/hanzhongtao/Programs/cg/c/mframework/build/src/common/cache/CMakeFiles/rebuild_cache.dir
+/Users/hanzhongtao/Programs/cg/c/mframework/build/src/common/cache/CMakeFiles/edit_cache.dir
+/Users/hanzhongtao/Programs/cg/c/mframework/build/src/common/cache/CMakeFiles/cache.dir

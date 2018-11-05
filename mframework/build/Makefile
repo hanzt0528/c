@@ -149,6 +149,32 @@ test_testnode/fast:
 	$(MAKE) -f src/tests/test_testnode/CMakeFiles/test_testnode.dir/build.make src/tests/test_testnode/CMakeFiles/test_testnode.dir/build
 .PHONY : test_testnode/fast
 
+#=============================================================================
+# Target rules for targets named test_cache
+
+# Build rule for target.
+test_cache: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_cache
+.PHONY : test_cache
+
+# fast build rule for target.
+test_cache/fast:
+	$(MAKE) -f src/tests/test_cache/CMakeFiles/test_cache.dir/build.make src/tests/test_cache/CMakeFiles/test_cache.dir/build
+.PHONY : test_cache/fast
+
+#=============================================================================
+# Target rules for targets named cache
+
+# Build rule for target.
+cache: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 cache
+.PHONY : cache
+
+# fast build rule for target.
+cache/fast:
+	$(MAKE) -f src/common/cache/CMakeFiles/cache.dir/build.make src/common/cache/CMakeFiles/cache.dir/build
+.PHONY : cache/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -160,6 +186,8 @@ help:
 	@echo "... base"
 	@echo "... testnode"
 	@echo "... test_testnode"
+	@echo "... test_cache"
+	@echo "... cache"
 .PHONY : help
 
 

@@ -13,9 +13,12 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.12.3/CMakeSystem.cmake"
   "../src/CMakeLists.txt"
   "../src/base/CMakeLists.txt"
+  "../src/common/CMakeLists.txt"
+  "../src/common/cache/CMakeLists.txt"
   "../src/nodes/CMakeLists.txt"
   "../src/nodes/testnode/CMakeLists.txt"
   "../src/tests/CMakeLists.txt"
+  "../src/tests/test_cache/CMakeLists.txt"
   "../src/tests/test_testnode/CMakeLists.txt"
   "/usr/local/Cellar/cmake/3.12.3/share/cmake/Modules/CMakeCInformation.cmake"
   "/usr/local/Cellar/cmake/3.12.3/share/cmake/Modules/CMakeCXXInformation.cmake"
@@ -55,6 +58,9 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "src/nodes/testnode/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/tests/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/tests/test_testnode/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/tests/test_cache/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/common/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/common/cache/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -62,4 +68,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "src/base/CMakeFiles/base.dir/DependInfo.cmake"
   "src/nodes/testnode/CMakeFiles/testnode.dir/DependInfo.cmake"
   "src/tests/test_testnode/CMakeFiles/test_testnode.dir/DependInfo.cmake"
+  "src/tests/test_cache/CMakeFiles/test_cache.dir/DependInfo.cmake"
+  "src/common/cache/CMakeFiles/cache.dir/DependInfo.cmake"
   )

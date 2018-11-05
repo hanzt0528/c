@@ -71,6 +71,7 @@ CMAKE_BINARY_DIR = /Users/hanzhongtao/Programs/cg/c/mframework/build
 src/all: src/base/all
 src/all: src/nodes/all
 src/all: src/tests/all
+src/all: src/common/all
 
 .PHONY : src/all
 
@@ -78,6 +79,7 @@ src/all: src/tests/all
 src/clean: src/base/clean
 src/clean: src/nodes/clean
 src/clean: src/tests/clean
+src/clean: src/common/clean
 
 .PHONY : src/clean
 
@@ -85,6 +87,7 @@ src/clean: src/tests/clean
 src/preinstall: src/base/preinstall
 src/preinstall: src/nodes/preinstall
 src/preinstall: src/tests/preinstall
+src/preinstall: src/common/preinstall
 
 .PHONY : src/preinstall
 
@@ -186,7 +189,7 @@ src/nodes/testnode/preinstall:
 src/nodes/testnode/CMakeFiles/testnode.dir/all: src/base/CMakeFiles/base.dir/all
 	$(MAKE) -f src/nodes/testnode/CMakeFiles/testnode.dir/build.make src/nodes/testnode/CMakeFiles/testnode.dir/depend
 	$(MAKE) -f src/nodes/testnode/CMakeFiles/testnode.dir/build.make src/nodes/testnode/CMakeFiles/testnode.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/hanzhongtao/Programs/cg/c/mframework/build/CMakeFiles --progress-num=6,7,8 "Built target testnode"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/hanzhongtao/Programs/cg/c/mframework/build/CMakeFiles --progress-num=11,12,13 "Built target testnode"
 .PHONY : src/nodes/testnode/CMakeFiles/testnode.dir/all
 
 # Include target in all.
@@ -221,16 +224,19 @@ clean: src/nodes/testnode/CMakeFiles/testnode.dir/clean
 
 # Convenience name for "all" pass in the directory.
 src/tests/all: src/tests/test_testnode/all
+src/tests/all: src/tests/test_cache/all
 
 .PHONY : src/tests/all
 
 # Convenience name for "clean" pass in the directory.
 src/tests/clean: src/tests/test_testnode/clean
+src/tests/clean: src/tests/test_cache/clean
 
 .PHONY : src/tests/clean
 
 # Convenience name for "preinstall" pass in the directory.
 src/tests/preinstall: src/tests/test_testnode/preinstall
+src/tests/preinstall: src/tests/test_cache/preinstall
 
 .PHONY : src/tests/preinstall
 
@@ -260,7 +266,7 @@ src/tests/test_testnode/CMakeFiles/test_testnode.dir/all: src/base/CMakeFiles/ba
 src/tests/test_testnode/CMakeFiles/test_testnode.dir/all: src/nodes/testnode/CMakeFiles/testnode.dir/all
 	$(MAKE) -f src/tests/test_testnode/CMakeFiles/test_testnode.dir/build.make src/tests/test_testnode/CMakeFiles/test_testnode.dir/depend
 	$(MAKE) -f src/tests/test_testnode/CMakeFiles/test_testnode.dir/build.make src/tests/test_testnode/CMakeFiles/test_testnode.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/hanzhongtao/Programs/cg/c/mframework/build/CMakeFiles --progress-num=4,5 "Built target test_testnode"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/hanzhongtao/Programs/cg/c/mframework/build/CMakeFiles --progress-num=9,10 "Built target test_testnode"
 .PHONY : src/tests/test_testnode/CMakeFiles/test_testnode.dir/all
 
 # Include target in all.
@@ -287,6 +293,135 @@ src/tests/test_testnode/CMakeFiles/test_testnode.dir/clean:
 
 # clean rule for target.
 clean: src/tests/test_testnode/CMakeFiles/test_testnode.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory src/tests/test_cache
+
+# Convenience name for "all" pass in the directory.
+src/tests/test_cache/all: src/tests/test_cache/CMakeFiles/test_cache.dir/all
+
+.PHONY : src/tests/test_cache/all
+
+# Convenience name for "clean" pass in the directory.
+src/tests/test_cache/clean: src/tests/test_cache/CMakeFiles/test_cache.dir/clean
+
+.PHONY : src/tests/test_cache/clean
+
+# Convenience name for "preinstall" pass in the directory.
+src/tests/test_cache/preinstall:
+
+.PHONY : src/tests/test_cache/preinstall
+
+#=============================================================================
+# Target rules for target src/tests/test_cache/CMakeFiles/test_cache.dir
+
+# All Build rule for target.
+src/tests/test_cache/CMakeFiles/test_cache.dir/all: src/base/CMakeFiles/base.dir/all
+src/tests/test_cache/CMakeFiles/test_cache.dir/all: src/common/cache/CMakeFiles/cache.dir/all
+	$(MAKE) -f src/tests/test_cache/CMakeFiles/test_cache.dir/build.make src/tests/test_cache/CMakeFiles/test_cache.dir/depend
+	$(MAKE) -f src/tests/test_cache/CMakeFiles/test_cache.dir/build.make src/tests/test_cache/CMakeFiles/test_cache.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/hanzhongtao/Programs/cg/c/mframework/build/CMakeFiles --progress-num=7,8 "Built target test_cache"
+.PHONY : src/tests/test_cache/CMakeFiles/test_cache.dir/all
+
+# Include target in all.
+all: src/tests/test_cache/CMakeFiles/test_cache.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+src/tests/test_cache/CMakeFiles/test_cache.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hanzhongtao/Programs/cg/c/mframework/build/CMakeFiles 8
+	$(MAKE) -f CMakeFiles/Makefile2 src/tests/test_cache/CMakeFiles/test_cache.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hanzhongtao/Programs/cg/c/mframework/build/CMakeFiles 0
+.PHONY : src/tests/test_cache/CMakeFiles/test_cache.dir/rule
+
+# Convenience name for target.
+test_cache: src/tests/test_cache/CMakeFiles/test_cache.dir/rule
+
+.PHONY : test_cache
+
+# clean rule for target.
+src/tests/test_cache/CMakeFiles/test_cache.dir/clean:
+	$(MAKE) -f src/tests/test_cache/CMakeFiles/test_cache.dir/build.make src/tests/test_cache/CMakeFiles/test_cache.dir/clean
+.PHONY : src/tests/test_cache/CMakeFiles/test_cache.dir/clean
+
+# clean rule for target.
+clean: src/tests/test_cache/CMakeFiles/test_cache.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory src/common
+
+# Convenience name for "all" pass in the directory.
+src/common/all: src/common/cache/all
+
+.PHONY : src/common/all
+
+# Convenience name for "clean" pass in the directory.
+src/common/clean: src/common/cache/clean
+
+.PHONY : src/common/clean
+
+# Convenience name for "preinstall" pass in the directory.
+src/common/preinstall: src/common/cache/preinstall
+
+.PHONY : src/common/preinstall
+
+#=============================================================================
+# Directory level rules for directory src/common/cache
+
+# Convenience name for "all" pass in the directory.
+src/common/cache/all: src/common/cache/CMakeFiles/cache.dir/all
+
+.PHONY : src/common/cache/all
+
+# Convenience name for "clean" pass in the directory.
+src/common/cache/clean: src/common/cache/CMakeFiles/cache.dir/clean
+
+.PHONY : src/common/cache/clean
+
+# Convenience name for "preinstall" pass in the directory.
+src/common/cache/preinstall:
+
+.PHONY : src/common/cache/preinstall
+
+#=============================================================================
+# Target rules for target src/common/cache/CMakeFiles/cache.dir
+
+# All Build rule for target.
+src/common/cache/CMakeFiles/cache.dir/all: src/base/CMakeFiles/base.dir/all
+	$(MAKE) -f src/common/cache/CMakeFiles/cache.dir/build.make src/common/cache/CMakeFiles/cache.dir/depend
+	$(MAKE) -f src/common/cache/CMakeFiles/cache.dir/build.make src/common/cache/CMakeFiles/cache.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/hanzhongtao/Programs/cg/c/mframework/build/CMakeFiles --progress-num=4,5,6 "Built target cache"
+.PHONY : src/common/cache/CMakeFiles/cache.dir/all
+
+# Include target in all.
+all: src/common/cache/CMakeFiles/cache.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+src/common/cache/CMakeFiles/cache.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hanzhongtao/Programs/cg/c/mframework/build/CMakeFiles 6
+	$(MAKE) -f CMakeFiles/Makefile2 src/common/cache/CMakeFiles/cache.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hanzhongtao/Programs/cg/c/mframework/build/CMakeFiles 0
+.PHONY : src/common/cache/CMakeFiles/cache.dir/rule
+
+# Convenience name for target.
+cache: src/common/cache/CMakeFiles/cache.dir/rule
+
+.PHONY : cache
+
+# clean rule for target.
+src/common/cache/CMakeFiles/cache.dir/clean:
+	$(MAKE) -f src/common/cache/CMakeFiles/cache.dir/build.make src/common/cache/CMakeFiles/cache.dir/clean
+.PHONY : src/common/cache/CMakeFiles/cache.dir/clean
+
+# clean rule for target.
+clean: src/common/cache/CMakeFiles/cache.dir/clean
 
 .PHONY : clean
 

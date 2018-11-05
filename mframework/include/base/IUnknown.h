@@ -3,7 +3,8 @@
 
 #include "util.h"
 #include "type.h"
-
+#include "xerrors.h"
+#include "TNsSmartPtr.h"
 interface IUnknown
 {
 public:
@@ -22,6 +23,20 @@ public:
     virtual ULONG __stdcall NonDelegatingRelease() = 0;
 
 };
+
+
+#ifndef NSDECLARE_IUNKNOWN
+#define NSDECLARE_IUNKNOWN									\
+    inline virtual HRESULT __stdcall QueryInterface(const IID& in_rsIID, void **ppv) {      \
+        return GetOwner()->QueryInterface(in_rsIID,ppv);            \
+    };                                                          \
+    inline virtual unsigned long __stdcall AddRef() {              \
+        return GetOwner()->AddRef();                            \
+    };                                                          \
+    inline virtual unsigned long __stdcall Release() {             \
+        return GetOwner()->Release();                           \
+    };                                                          
+#endif
 
 extern "C"
 {

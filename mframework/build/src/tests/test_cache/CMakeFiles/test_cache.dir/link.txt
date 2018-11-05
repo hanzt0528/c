@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/c++   -std=c++11  -O0 -Wall -g -ggdb -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/test_cache.dir/main.cpp.o  -o ../../../../bin/test_cache  -L/Users/hanzhongtao/Programs/cg/c/mframework/lib -Wl,-rpath,/Users/hanzhongtao/Programs/cg/c/mframework/lib ../../../../lib/libcache.dylib -ldl ../../../../lib/libbase.a 

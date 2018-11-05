@@ -4,8 +4,10 @@
 src/base/CMakeFiles/base.dir/CUnknown.cpp.o
  /Users/hanzhongtao/Programs/cg/c/mframework/include/base/CUnknown.h
  /Users/hanzhongtao/Programs/cg/c/mframework/include/base/IUnknown.h
+ /Users/hanzhongtao/Programs/cg/c/mframework/include/base/TNsSmartPtr.h
  /Users/hanzhongtao/Programs/cg/c/mframework/include/base/type.h
  /Users/hanzhongtao/Programs/cg/c/mframework/include/base/util.h
+ /Users/hanzhongtao/Programs/cg/c/mframework/include/base/xerrors.h
  /Users/hanzhongtao/Programs/cg/c/mframework/src/base/CUnknown.cpp
 src/base/CMakeFiles/base.dir/util.cpp.o
  /Users/hanzhongtao/Programs/cg/c/mframework/include/base/type.h

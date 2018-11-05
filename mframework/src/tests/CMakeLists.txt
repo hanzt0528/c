@@ -1,1 +1,2 @@
 ADD_SUBDIRECTORY(test_testnode)
+ADD_SUBDIRECTORY(test_cache)
