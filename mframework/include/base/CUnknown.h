@@ -23,9 +23,9 @@ public:
    {
       return m_pkIUnknown;
    }
-    virtual LONG  __stdcall NonDelegatingQueryInterface(const IID& in_rsIID, void** ppvI);
-    virtual ULONG __stdcall NonDelegatingAddRef();
-    virtual ULONG __stdcall NonDelegatingRelease(); 
+    virtual unsigned long   NonDelegatingQueryInterface(const IID& in_rsIID, void** ppvI);
+    virtual ULONG  NonDelegatingAddRef();
+    virtual ULONG  NonDelegatingRelease(); 
 
 };
 

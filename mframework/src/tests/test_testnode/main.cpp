@@ -13,8 +13,8 @@ int main()
 {
     void* pHandle;
      LogD("main","in");
-     char *pLibName = "../lib/libtestnode.dylib";
-      pHandle = dlopen("../lib/libtestnode.dylib",RTLD_LAZY);
+     char *pLibName = "../lib/libtestnode.so";
+      pHandle = dlopen("../lib/libtestnode.so",RTLD_LAZY);
     if(!pHandle)
     {
         LogE(TAG,"Load lib %s Exception: %s\n",pLibName,dlerror());

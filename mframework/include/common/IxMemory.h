@@ -12,11 +12,11 @@ extern "C"
 interface IxMemory : public IUnknown
 {
 public:
-   virtual HRESULT __stdcall GetBuffer( unsigned char ** ppBuffer ) = 0;
+   virtual HRESULT  GetBuffer( unsigned char ** ppBuffer ) = 0;
 
-   virtual HRESULT __stdcall Alloc( unsigned long in_ulSize ) = 0;
+   virtual HRESULT  Alloc( unsigned long in_ulSize ) = 0;
 
-   virtual HRESULT __stdcall GetSize( unsigned long * out_pulSize ) = 0;
+   virtual HRESULT  GetSize( unsigned long * out_pulSize ) = 0;
 };
 
 #endif 

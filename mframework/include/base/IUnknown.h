@@ -8,9 +8,9 @@
 interface IUnknown
 {
 public:
-    virtual LONG  __stdcall QueryInterface(const IID& in_rsIID, void** ppvI) = 0;
-    virtual ULONG __stdcall AddRef() = 0;
-    virtual ULONG __stdcall Release() = 0;
+    virtual LONG   QueryInterface(const IID& in_rsIID, void** ppvI) = 0;
+    virtual ULONG  AddRef() = 0;
+    virtual ULONG  Release() = 0;
 
 };
 
@@ -18,22 +18,22 @@ public:
 interface INonDelegatingUnknown
 {
 public:
-    virtual LONG  __stdcall NonDelegatingQueryInterface(const IID& in_rsIID, void** ppvI) = 0;
-    virtual ULONG __stdcall NonDelegatingAddRef() = 0;
-    virtual ULONG __stdcall NonDelegatingRelease() = 0;
+    virtual unsigned long   NonDelegatingQueryInterface(const IID& in_rsIID, void** ppvI) = 0;
+    virtual ULONG  NonDelegatingAddRef() = 0;
+    virtual ULONG  NonDelegatingRelease() = 0;
 
 };
 
 
 #ifndef NSDECLARE_IUNKNOWN
 #define NSDECLARE_IUNKNOWN									\
-    inline virtual HRESULT __stdcall QueryInterface(const IID& in_rsIID, void **ppv) {      \
+    inline virtual HRESULT  QueryInterface(const IID& in_rsIID, void **ppv) {      \
         return GetOwner()->QueryInterface(in_rsIID,ppv);            \
     };                                                          \
-    inline virtual unsigned long __stdcall AddRef() {              \
+    inline virtual unsigned long  AddRef() {              \
         return GetOwner()->AddRef();                            \
     };                                                          \
-    inline virtual unsigned long __stdcall Release() {             \
+    inline virtual unsigned long  Release() {             \
         return GetOwner()->Release();                           \
     };                                                          
 #endif

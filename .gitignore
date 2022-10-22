@@ -1,5 +1,5 @@
 #g++
-
+build/
 #Object files
 *.o
 *.d

@@ -22,7 +22,7 @@ CUnknown::~CUnknown()
 //-----------------------------------------------------------------------
 // NonDelegatingQueryInterface
 //-----------------------------------------------------------------------
-LONG __stdcall CUnknown::NonDelegatingQueryInterface(const IID& in_rsIID,
+unsigned long  CUnknown::NonDelegatingQueryInterface(const IID& in_rsIID,
                                                      void **out_ppv)
 {
 #ifdef _DEBUG
@@ -50,7 +50,7 @@ LONG __stdcall CUnknown::NonDelegatingQueryInterface(const IID& in_rsIID,
 //-----------------------------------------------------------------------
 // NonDelegatingAddRef
 //-----------------------------------------------------------------------
-unsigned long __stdcall  CUnknown::NonDelegatingAddRef()
+unsigned long   CUnknown::NonDelegatingAddRef()
 {
 
    LogD(TAG,"enter NonDelegatingAddRef");
@@ -62,7 +62,7 @@ unsigned long __stdcall  CUnknown::NonDelegatingAddRef()
 //-----------------------------------------------------------------------
 // NonDelegatingRelease
 //-----------------------------------------------------------------------
-unsigned long __stdcall CUnknown::NonDelegatingRelease()
+unsigned long  CUnknown::NonDelegatingRelease()
 {
 
    LogD(TAG,"enter NonDelegatingRelease");

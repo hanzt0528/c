@@ -11,10 +11,10 @@ class CAdd : public IAdd,
 public:
     CAdd();
     ~CAdd();
-  NSDECLARE_IUNKNOWN
-public:
+    NSDECLARE_IUNKNOWN
+  public:
     //IUnknown interface
-  virtual LONG  __stdcall NonDelegatingQueryInterface(const IID& in_rsIID, void **out_ppv);
+  virtual unsigned long  NonDelegatingQueryInterface(const IID& in_rsIID, void **out_ppv);
     //IAdd interface
     virtual int add(int x,int y);
 };

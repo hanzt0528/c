@@ -14,8 +14,8 @@ int main()
   HRESULT hr = NOERROR;
     void* pHandle;
      LogD("main","in");
-     char *pLibName = "../lib/libcache.dylib";
-      pHandle = dlopen("../lib/libcache.dylib",RTLD_LAZY);
+     char *pLibName = "../lib/libcache.so";
+      pHandle = dlopen("../lib/libcache.so",RTLD_LAZY);
     if(!pHandle)
     {
         LogE(TAG,"Load lib %s Exception: %s\n",pLibName,dlerror());

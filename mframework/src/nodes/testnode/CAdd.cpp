@@ -13,7 +13,7 @@ CAdd::~CAdd()
 }
 
 
- LONG CAdd::NonDelegatingQueryInterface(const IID& in_rsIID, void **out_ppv) 
+ unsigned long CAdd::NonDelegatingQueryInterface(const IID& in_rsIID, void **out_ppv) 
 {
    if( in_rsIID == IID_IAdd )
    {

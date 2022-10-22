@@ -15,13 +15,13 @@ public:
   NSDECLARE_IUNKNOWN
 public:
     //IUnknown interface
-  virtual LONG  __stdcall NonDelegatingQueryInterface(const IID& in_rsIID, void **out_ppv);
+  virtual ULONG   NonDelegatingQueryInterface(const IID& in_rsIID, void **out_ppv);
     //IxMemory interface
-   virtual HRESULT __stdcall GetBuffer( unsigned char ** ppBuffer );
+   virtual HRESULT  GetBuffer( unsigned char ** ppBuffer );
 
-   virtual HRESULT __stdcall Alloc( unsigned long in_ulSize );
+   virtual HRESULT  Alloc( unsigned long in_ulSize );
 
-   virtual HRESULT __stdcall GetSize( unsigned long * out_pulSize );
+   virtual HRESULT  GetSize( unsigned long * out_pulSize );
 protected:
   unsigned char *m_pBuffer;
   unsigned long m_ulBufferSize;

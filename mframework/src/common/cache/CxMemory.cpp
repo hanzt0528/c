@@ -15,7 +15,7 @@ CxMemory::~CxMemory()
 }
 
 
- LONG CxMemory::NonDelegatingQueryInterface(const IID& in_rsIID, void **out_ppv) 
+ ULONG CxMemory::NonDelegatingQueryInterface(const IID& in_rsIID, void **out_ppv) 
 {
    if( in_rsIID == IID_IxMemory )
    {
@@ -31,7 +31,7 @@ CxMemory::~CxMemory()
    }
 }
 
-HRESULT  __stdcall CxMemory::GetBuffer( unsigned char ** ppBuffer )
+HRESULT   CxMemory::GetBuffer( unsigned char ** ppBuffer )
 {
 
    HRESULT hrs = NOERROR ; 
@@ -51,7 +51,7 @@ HRESULT  __stdcall CxMemory::GetBuffer( unsigned char ** ppBuffer )
    
 }
 
-HRESULT  __stdcall CxMemory::Alloc( unsigned long in_ulSize )
+HRESULT   CxMemory::Alloc( unsigned long in_ulSize )
 {
   HRESULT hr = NOERROR;
 
@@ -97,7 +97,7 @@ HRESULT  __stdcall CxMemory::Alloc( unsigned long in_ulSize )
   return hr;
 }
 
-HRESULT __stdcall CxMemory::GetSize( unsigned long * out_pulSize )
+HRESULT  CxMemory::GetSize( unsigned long * out_pulSize )
 {
  HRESULT hrs = NOERROR ;
 
