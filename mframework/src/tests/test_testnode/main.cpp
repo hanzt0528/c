@@ -23,6 +23,7 @@ int main()
     
     LogD(TAG,"dlopen lib %s successful, handle: %p\n",pLibName,pHandle);
     
+    //todo::
     IUnknown* (*pDllGetClassFactory)( const IID &in_rsIID, void **ppvI) = nullptr;
     char* error = nullptr;
     *(void**)(&pDllGetClassFactory) = dlsym(pHandle, "DllGetClassFactory");
