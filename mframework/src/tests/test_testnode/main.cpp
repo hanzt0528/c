@@ -14,7 +14,6 @@ int main()
     void* pHandle;
      LogD("main","in");
      char *pLibName = "../lib/libtestnode.so";
-     
       pHandle = dlopen("../lib/libtestnode.so",RTLD_LAZY);
     if(!pHandle)
     {
