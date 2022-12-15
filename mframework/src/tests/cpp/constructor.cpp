@@ -1,6 +1,6 @@
 #include <iostream>
 #include <memory>
-
+#include <vector>
 class A
 {
     public:
@@ -82,6 +82,18 @@ int main(int argc,char* argv[])
     getA(pa);
 
     std::cout << "pa use_count = "<<pa.use_count()<<std::endl;
+
+    std::vector<std::shared_ptr<A> > as;
+
+    as.push_back(pa);
+    std::cout << "pa use_count = "<<pa.use_count()<<std::endl;
+    as.clear();
+    std::cout << "pa use_count = "<<pa.use_count()<<std::endl;
+    
+    std::weak_ptr<A> wp(pa);
+
+    std::cout << "pa use_count = "<<pa.use_count()<<std::endl;
+
 
    return 0;
 }
