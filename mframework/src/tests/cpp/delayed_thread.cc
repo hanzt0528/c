@@ -2,6 +2,8 @@
 #include <iostream>
 #include <chrono>
 using namespace std::chrono_literals;
+
+//g++ -pthread delayed_thread.cc
 void work()
 {
     std::cout << " work " << std::endl;

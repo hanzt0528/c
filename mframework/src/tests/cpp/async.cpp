@@ -11,14 +11,14 @@ void hello(const char *message)
 }
 int main()
 {
-    // std::async(std::launch::async,[](const char *message){
-    //     std::cout <<message;
-    // },"Hello,");
+    std::async(std::launch::async,[](const char *message){
+        std::cout <<message<<std::ends;
+    },"Hello,");
 
-    std::future<void >ret = std::async(std::launch::deferred,hello, "Hello,");
-
+    // std::future<void >ret = std::async(std::launch::deferred,hello, "Hello,");
+    // ret.get();
     std::cout << "World!" << std::endl;
 
-    //ret.get();
+    
     return 1;
 }

@@ -1,6 +1,9 @@
 #include <iostream>
 #include <memory>
 #include <string.h>
+#include <vector>
+
+
 class CString
 {
 public:
@@ -28,5 +31,6 @@ int main()
     // CString s(12);//ok
     CString s{12}; // ok
     s.print_size();
+
     return 0;
 }

@@ -22,9 +22,9 @@ int main()
     auto sum = fadd(1);
 
     std::cout << "sum is :" << sum << std::endl;
-    std::function<int(A&,int,int)> fsum=&A::sum;
+    std::function<int(A*,int,int)> fsum=&A::sum;
 
-    A a;
+    A *a=new A;
 
     sum  = fsum(a,1,2);
     std::cout << "sum is :" << sum << std::endl;
