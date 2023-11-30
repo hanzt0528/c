@@ -1,0 +1,23 @@
+
+
+1Word Representation
+1)Synonym/Hypernym
+2)one-hot Representation
+3)Represent Word by Context.
+4)Word Embedding
+   (1)Build a dense vector for each word learned from large-scale text corpora.
+   (2)Learning method:Word2Vec.
+
+Language Modeling is the task of predicting the upcoming word.
+
+Word2Vec
+1)CBOW: continuous bag-of-words
+2)skip-gram:continuous skip-gram
+
+2Recurrent Neural Networks
+ 1)GRU:gated recurrent Unit
+ 2)LSTM:long short-term memory network.
+ 3)bidirectional RNNs
+ 
+
+
