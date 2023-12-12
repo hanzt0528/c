@@ -18,6 +18,46 @@ Word2Vec
  1)GRU:gated recurrent Unit
  2)LSTM:long short-term memory network.
  3)bidirectional RNNs
+
+
+ PLM(pre-trained Language Model):
+ Word2Vec is the first PLM
+ ->Pre-train RNN
+ ->GPT&BERT
+
+Tow Mainstreams of PLMs:
+1)Feature-based approaches
+2)Fine-tuning approaches
+
+GPT(2018 OpenAI) is the first work to pre-train a PLM based on Transformer.
+
+Experimental results show that fine-tuning approaches are better than feature-based approaches.
+
+Model Adaptation:
+1)Task&Data-wise: prompt-learning to enhance the few-shot learning capability by bridging the gap between model tuning and pre-training.
+2)Optimization-wise: delta tuning to stimulate models with billions of parameters with optimization of a small portion of parameters.
+
+prompt-learning:
+1keys:
+   1)use PLMs  as base encoders.
+   2)add additional context(template) with a [MASK] position
+   3)Project labels to label words(verbalizer)
+   4)Bridge the GAP between pre-training and fine-tuning
+2class:
+  1)auto-regressive (GPT-1,GPT-2,GPT-3,OPT,...) 
+   suitable for super-large pre-trained models.
+   autoregressive Prompt.
+  eg. I love this movie.It is [MASK]
+  2)Masked Language Modeling(BERT,RoBERTa,DeBERTa)
+   suitable for natural Language understanding.
+   Cloze-style Prompt.
+   eg. I love this movie.It is a [Mask] movie.
+
+
+
+
+
+
  
 
 

@@ -3,7 +3,7 @@
 // #include "threadpool3.h"
 //#include "threadpool4.h"
 //#include "threadpool5.h"
-#include "threadpool9.h"
+#include "threadpool15.h"
 #include <iostream>
 
 void test()
@@ -14,7 +14,13 @@ void test()
 // g++ threadpool_test.cpp
 int main(int argc, char *argv[])
 {
+    float ft = 1e-5f;
+
+    std::cout << "ft = " <<ft<< std::endl;
     std::cout << "hello!" << std::endl;
+
+    fprintf(stderr,"ok\n");
+
 
     ThreadPool pool(5);
 
